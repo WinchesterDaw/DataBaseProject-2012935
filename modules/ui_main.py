@@ -1,29 +1,39 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'maingnxZcz.ui'
+## Form generated from reading UI file 'maintBOzic.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.0.2
+## Created by: Qt User Interface Compiler version 6.3.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide6.QtCore import *
-from PySide6.QtGui import *
-from PySide6.QtWidgets import *
-
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QAbstractItemView, QAbstractScrollArea, QApplication, QCheckBox,
+    QComboBox, QCommandLinkButton, QFrame, QGridLayout,
+    QHBoxLayout, QHeaderView, QLabel, QLineEdit,
+    QMainWindow, QPlainTextEdit, QPushButton, QRadioButton,
+    QScrollArea, QScrollBar, QSizePolicy, QSlider,
+    QStackedWidget, QTableWidget, QTableWidgetItem, QTextEdit,
+    QVBoxLayout, QWidget)
 from . resources_rc import *
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1280, 720)
+        MainWindow.resize(940, 560)
         MainWindow.setMinimumSize(QSize(940, 560))
         self.styleSheet = QWidget(MainWindow)
         self.styleSheet.setObjectName(u"styleSheet")
         font = QFont()
-        font.setFamily(u"Segoe UI")
+        font.setFamilies([u"Segoe UI"])
         font.setPointSize(10)
         font.setBold(False)
         font.setItalic(False)
@@ -588,7 +598,7 @@ class Ui_MainWindow(object):
         self.titleLeftApp.setObjectName(u"titleLeftApp")
         self.titleLeftApp.setGeometry(QRect(70, 8, 160, 20))
         font1 = QFont()
-        font1.setFamily(u"Segoe UI Semibold")
+        font1.setFamilies([u"Segoe UI Semibold"])
         font1.setPointSize(12)
         font1.setBold(False)
         font1.setItalic(False)
@@ -599,7 +609,7 @@ class Ui_MainWindow(object):
         self.titleLeftDescription.setGeometry(QRect(70, 27, 160, 16))
         self.titleLeftDescription.setMaximumSize(QSize(16777215, 16))
         font2 = QFont()
-        font2.setFamily(u"Segoe UI")
+        font2.setFamilies([u"Segoe UI"])
         font2.setPointSize(8)
         font2.setBold(False)
         font2.setItalic(False)
@@ -663,18 +673,6 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_8.addWidget(self.btn_home)
 
-        self.btn_widgets = QPushButton(self.topMenu)
-        self.btn_widgets.setObjectName(u"btn_widgets")
-        sizePolicy.setHeightForWidth(self.btn_widgets.sizePolicy().hasHeightForWidth())
-        self.btn_widgets.setSizePolicy(sizePolicy)
-        self.btn_widgets.setMinimumSize(QSize(0, 45))
-        self.btn_widgets.setFont(font)
-        self.btn_widgets.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_widgets.setLayoutDirection(Qt.LeftToRight)
-        self.btn_widgets.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-gamepad.png);")
-
-        self.verticalLayout_8.addWidget(self.btn_widgets)
-
         self.btn_new = QPushButton(self.topMenu)
         self.btn_new.setObjectName(u"btn_new")
         sizePolicy.setHeightForWidth(self.btn_new.sizePolicy().hasHeightForWidth())
@@ -683,9 +681,22 @@ class Ui_MainWindow(object):
         self.btn_new.setFont(font)
         self.btn_new.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_new.setLayoutDirection(Qt.LeftToRight)
-        self.btn_new.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-file.png);")
+        self.btn_new.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-paper-plane.png);")
 
         self.verticalLayout_8.addWidget(self.btn_new)
+
+        self.btn_widgets = QPushButton(self.topMenu)
+        self.btn_widgets.setObjectName(u"btn_widgets")
+        sizePolicy.setHeightForWidth(self.btn_widgets.sizePolicy().hasHeightForWidth())
+        self.btn_widgets.setSizePolicy(sizePolicy)
+        self.btn_widgets.setMinimumSize(QSize(0, 45))
+        self.btn_widgets.setFont(font)
+        self.btn_widgets.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_widgets.setLayoutDirection(Qt.LeftToRight)
+        self.btn_widgets.setAutoFillBackground(False)
+        self.btn_widgets.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-action-undo);")
+
+        self.verticalLayout_8.addWidget(self.btn_widgets)
 
         self.btn_save = QPushButton(self.topMenu)
         self.btn_save.setObjectName(u"btn_save")
@@ -972,7 +983,7 @@ class Ui_MainWindow(object):
         self.maximizeRestoreAppBtn.setMinimumSize(QSize(28, 28))
         self.maximizeRestoreAppBtn.setMaximumSize(QSize(28, 28))
         font3 = QFont()
-        font3.setFamily(u"Segoe UI")
+        font3.setFamilies([u"Segoe UI"])
         font3.setPointSize(10)
         font3.setBold(False)
         font3.setItalic(False)
@@ -1018,6 +1029,85 @@ class Ui_MainWindow(object):
         self.horizontalLayout_4.setSpacing(0)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.extraRightBox = QFrame(self.content)
+        self.extraRightBox.setObjectName(u"extraRightBox")
+        self.extraRightBox.setMinimumSize(QSize(0, 0))
+        self.extraRightBox.setMaximumSize(QSize(0, 16777215))
+        self.extraRightBox.setFrameShape(QFrame.NoFrame)
+        self.extraRightBox.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_7 = QVBoxLayout(self.extraRightBox)
+        self.verticalLayout_7.setSpacing(0)
+        self.verticalLayout_7.setObjectName(u"verticalLayout_7")
+        self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
+        self.themeSettingsTopDetail = QFrame(self.extraRightBox)
+        self.themeSettingsTopDetail.setObjectName(u"themeSettingsTopDetail")
+        self.themeSettingsTopDetail.setMaximumSize(QSize(16777215, 3))
+        self.themeSettingsTopDetail.setFrameShape(QFrame.NoFrame)
+        self.themeSettingsTopDetail.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout_7.addWidget(self.themeSettingsTopDetail)
+
+        self.contentSettings = QFrame(self.extraRightBox)
+        self.contentSettings.setObjectName(u"contentSettings")
+        self.contentSettings.setFrameShape(QFrame.NoFrame)
+        self.contentSettings.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_13 = QVBoxLayout(self.contentSettings)
+        self.verticalLayout_13.setSpacing(0)
+        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
+        self.verticalLayout_13.setContentsMargins(0, 0, 0, 0)
+        self.topMenus = QFrame(self.contentSettings)
+        self.topMenus.setObjectName(u"topMenus")
+        self.topMenus.setFrameShape(QFrame.NoFrame)
+        self.topMenus.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_14 = QVBoxLayout(self.topMenus)
+        self.verticalLayout_14.setSpacing(0)
+        self.verticalLayout_14.setObjectName(u"verticalLayout_14")
+        self.verticalLayout_14.setContentsMargins(0, 0, 0, 0)
+        self.btn_message = QPushButton(self.topMenus)
+        self.btn_message.setObjectName(u"btn_message")
+        sizePolicy.setHeightForWidth(self.btn_message.sizePolicy().hasHeightForWidth())
+        self.btn_message.setSizePolicy(sizePolicy)
+        self.btn_message.setMinimumSize(QSize(0, 45))
+        self.btn_message.setFont(font)
+        self.btn_message.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_message.setLayoutDirection(Qt.LeftToRight)
+        self.btn_message.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-envelope-open.png);")
+
+        self.verticalLayout_14.addWidget(self.btn_message)
+
+        self.btn_print = QPushButton(self.topMenus)
+        self.btn_print.setObjectName(u"btn_print")
+        sizePolicy.setHeightForWidth(self.btn_print.sizePolicy().hasHeightForWidth())
+        self.btn_print.setSizePolicy(sizePolicy)
+        self.btn_print.setMinimumSize(QSize(0, 45))
+        self.btn_print.setFont(font)
+        self.btn_print.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_print.setLayoutDirection(Qt.LeftToRight)
+        self.btn_print.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-print.png);")
+
+        self.verticalLayout_14.addWidget(self.btn_print)
+
+        self.btn_logout = QPushButton(self.topMenus)
+        self.btn_logout.setObjectName(u"btn_logout")
+        sizePolicy.setHeightForWidth(self.btn_logout.sizePolicy().hasHeightForWidth())
+        self.btn_logout.setSizePolicy(sizePolicy)
+        self.btn_logout.setMinimumSize(QSize(0, 45))
+        self.btn_logout.setFont(font)
+        self.btn_logout.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_logout.setLayoutDirection(Qt.LeftToRight)
+        self.btn_logout.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-account-logout.png);")
+
+        self.verticalLayout_14.addWidget(self.btn_logout)
+
+
+        self.verticalLayout_13.addWidget(self.topMenus, 0, Qt.AlignTop)
+
+
+        self.verticalLayout_7.addWidget(self.contentSettings)
+
+
+        self.horizontalLayout_4.addWidget(self.extraRightBox)
+
         self.pagesContainer = QFrame(self.content)
         self.pagesContainer.setObjectName(u"pagesContainer")
         self.pagesContainer.setStyleSheet(u"")
@@ -1036,6 +1126,64 @@ class Ui_MainWindow(object):
 "background-position: center;\n"
 "background-repeat: no-repeat;")
         self.stackedWidget.addWidget(self.home)
+        self.student_table = QWidget()
+        self.student_table.setObjectName(u"student_table")
+        self.gridLayout_4 = QGridLayout(self.student_table)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.welcome = QLabel(self.student_table)
+        self.welcome.setObjectName(u"welcome")
+
+        self.gridLayout_4.addWidget(self.welcome, 0, 1, 1, 1)
+
+        self.btn_pwd_change = QPushButton(self.student_table)
+        self.btn_pwd_change.setObjectName(u"btn_pwd_change")
+        self.btn_pwd_change.setMinimumSize(QSize(150, 30))
+        self.btn_pwd_change.setFont(font)
+        self.btn_pwd_change.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_pwd_change.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        icon4 = QIcon()
+        icon4.addFile(u":/icons/images/icons/cil-pencil.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_pwd_change.setIcon(icon4)
+
+        self.gridLayout_4.addWidget(self.btn_pwd_change, 1, 0, 1, 1)
+
+        self.btn_course_check = QPushButton(self.student_table)
+        self.btn_course_check.setObjectName(u"btn_course_check")
+        self.btn_course_check.setMinimumSize(QSize(150, 30))
+        self.btn_course_check.setFont(font)
+        self.btn_course_check.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_course_check.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        icon5 = QIcon()
+        icon5.addFile(u":/icons/images/icons/cil-view-quilt.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_course_check.setIcon(icon5)
+
+        self.gridLayout_4.addWidget(self.btn_course_check, 1, 2, 1, 1)
+
+        self.btn_course_choose = QPushButton(self.student_table)
+        self.btn_course_choose.setObjectName(u"btn_course_choose")
+        self.btn_course_choose.setMinimumSize(QSize(150, 30))
+        self.btn_course_choose.setFont(font)
+        self.btn_course_choose.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_course_choose.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        icon6 = QIcon()
+        icon6.addFile(u":/icons/images/icons/cil-hand-point-up.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_course_choose.setIcon(icon6)
+
+        self.gridLayout_4.addWidget(self.btn_course_choose, 2, 0, 1, 1)
+
+        self.btn_info_change = QPushButton(self.student_table)
+        self.btn_info_change.setObjectName(u"btn_info_change")
+        self.btn_info_change.setMinimumSize(QSize(150, 30))
+        self.btn_info_change.setFont(font)
+        self.btn_info_change.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_info_change.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        icon7 = QIcon()
+        icon7.addFile(u":/icons/images/icons/cil-cut.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_info_change.setIcon(icon7)
+
+        self.gridLayout_4.addWidget(self.btn_info_change, 2, 2, 1, 1)
+
+        self.stackedWidget.addWidget(self.student_table)
         self.widgets = QWidget()
         self.widgets.setObjectName(u"widgets")
         self.widgets.setStyleSheet(u"b")
@@ -1100,9 +1248,9 @@ class Ui_MainWindow(object):
         self.pushButton.setFont(font)
         self.pushButton.setCursor(QCursor(Qt.PointingHandCursor))
         self.pushButton.setStyleSheet(u"background-color: rgb(52, 59, 72);")
-        icon4 = QIcon()
-        icon4.addFile(u":/icons/images/icons/cil-folder-open.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.pushButton.setIcon(icon4)
+        icon8 = QIcon()
+        icon8.addFile(u":/icons/images/icons/cil-folder-open.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton.setIcon(icon8)
 
         self.gridLayout.addWidget(self.pushButton, 0, 1, 1, 1)
 
@@ -1135,6 +1283,32 @@ class Ui_MainWindow(object):
         self.verticalLayout_19.setObjectName(u"verticalLayout_19")
         self.gridLayout_2 = QGridLayout()
         self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.radioButton = QRadioButton(self.row_2)
+        self.radioButton.setObjectName(u"radioButton")
+        self.radioButton.setStyleSheet(u"")
+
+        self.gridLayout_2.addWidget(self.radioButton, 0, 1, 1, 1)
+
+        self.horizontalScrollBar = QScrollBar(self.row_2)
+        self.horizontalScrollBar.setObjectName(u"horizontalScrollBar")
+        sizePolicy.setHeightForWidth(self.horizontalScrollBar.sizePolicy().hasHeightForWidth())
+        self.horizontalScrollBar.setSizePolicy(sizePolicy)
+        self.horizontalScrollBar.setStyleSheet(u" QScrollBar:vertical { background: rgb(52, 59, 72); }\n"
+" QScrollBar:horizontal { background: rgb(52, 59, 72); }")
+        self.horizontalScrollBar.setOrientation(Qt.Horizontal)
+
+        self.gridLayout_2.addWidget(self.horizontalScrollBar, 1, 3, 1, 1)
+
+        self.commandLinkButton = QCommandLinkButton(self.row_2)
+        self.commandLinkButton.setObjectName(u"commandLinkButton")
+        self.commandLinkButton.setCursor(QCursor(Qt.PointingHandCursor))
+        self.commandLinkButton.setStyleSheet(u"")
+        icon9 = QIcon()
+        icon9.addFile(u":/icons/images/icons/cil-link.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.commandLinkButton.setIcon(icon9)
+
+        self.gridLayout_2.addWidget(self.commandLinkButton, 1, 6, 1, 1)
+
         self.checkBox = QCheckBox(self.row_2)
         self.checkBox.setObjectName(u"checkBox")
         self.checkBox.setAutoFillBackground(False)
@@ -1142,26 +1316,12 @@ class Ui_MainWindow(object):
 
         self.gridLayout_2.addWidget(self.checkBox, 0, 0, 1, 1)
 
-        self.radioButton = QRadioButton(self.row_2)
-        self.radioButton.setObjectName(u"radioButton")
-        self.radioButton.setStyleSheet(u"")
-
-        self.gridLayout_2.addWidget(self.radioButton, 0, 1, 1, 1)
-
         self.verticalSlider = QSlider(self.row_2)
         self.verticalSlider.setObjectName(u"verticalSlider")
         self.verticalSlider.setStyleSheet(u"")
         self.verticalSlider.setOrientation(Qt.Vertical)
 
         self.gridLayout_2.addWidget(self.verticalSlider, 0, 2, 3, 1)
-
-        self.verticalScrollBar = QScrollBar(self.row_2)
-        self.verticalScrollBar.setObjectName(u"verticalScrollBar")
-        self.verticalScrollBar.setStyleSheet(u" QScrollBar:vertical { background: rgb(52, 59, 72); }\n"
-" QScrollBar:horizontal { background: rgb(52, 59, 72); }")
-        self.verticalScrollBar.setOrientation(Qt.Vertical)
-
-        self.gridLayout_2.addWidget(self.verticalScrollBar, 0, 4, 3, 1)
 
         self.scrollArea = QScrollArea(self.row_2)
         self.scrollArea.setObjectName(u"scrollArea")
@@ -1177,7 +1337,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 218, 218))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 274, 218))
         self.scrollAreaWidgetContents.setStyleSheet(u" QScrollBar:vertical {\n"
 "	border: none;\n"
 "    background: rgb(52, 59, 72);\n"
@@ -1211,32 +1371,20 @@ class Ui_MainWindow(object):
 
         self.gridLayout_2.addWidget(self.comboBox, 1, 0, 1, 2)
 
-        self.horizontalScrollBar = QScrollBar(self.row_2)
-        self.horizontalScrollBar.setObjectName(u"horizontalScrollBar")
-        sizePolicy.setHeightForWidth(self.horizontalScrollBar.sizePolicy().hasHeightForWidth())
-        self.horizontalScrollBar.setSizePolicy(sizePolicy)
-        self.horizontalScrollBar.setStyleSheet(u" QScrollBar:vertical { background: rgb(52, 59, 72); }\n"
-" QScrollBar:horizontal { background: rgb(52, 59, 72); }")
-        self.horizontalScrollBar.setOrientation(Qt.Horizontal)
-
-        self.gridLayout_2.addWidget(self.horizontalScrollBar, 1, 3, 1, 1)
-
-        self.commandLinkButton = QCommandLinkButton(self.row_2)
-        self.commandLinkButton.setObjectName(u"commandLinkButton")
-        self.commandLinkButton.setCursor(QCursor(Qt.PointingHandCursor))
-        self.commandLinkButton.setStyleSheet(u"")
-        icon5 = QIcon()
-        icon5.addFile(u":/icons/images/icons/cil-link.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.commandLinkButton.setIcon(icon5)
-
-        self.gridLayout_2.addWidget(self.commandLinkButton, 1, 6, 1, 1)
-
         self.horizontalSlider = QSlider(self.row_2)
         self.horizontalSlider.setObjectName(u"horizontalSlider")
         self.horizontalSlider.setStyleSheet(u"")
         self.horizontalSlider.setOrientation(Qt.Horizontal)
 
         self.gridLayout_2.addWidget(self.horizontalSlider, 2, 0, 1, 2)
+
+        self.verticalScrollBar = QScrollBar(self.row_2)
+        self.verticalScrollBar.setObjectName(u"verticalScrollBar")
+        self.verticalScrollBar.setStyleSheet(u" QScrollBar:vertical { background: rgb(52, 59, 72); }\n"
+" QScrollBar:horizontal { background: rgb(52, 59, 72); }")
+        self.verticalScrollBar.setOrientation(Qt.Vertical)
+
+        self.gridLayout_2.addWidget(self.verticalScrollBar, 0, 4, 3, 1)
 
 
         self.verticalLayout_19.addLayout(self.gridLayout_2)
@@ -1267,7 +1415,7 @@ class Ui_MainWindow(object):
         if (self.tableWidget.rowCount() < 16):
             self.tableWidget.setRowCount(16)
         font4 = QFont()
-        font4.setFamily(u"Segoe UI")
+        font4.setFamilies([u"Segoe UI"])
         __qtablewidgetitem4 = QTableWidgetItem()
         __qtablewidgetitem4.setFont(font4);
         self.tableWidget.setVerticalHeaderItem(0, __qtablewidgetitem4)
@@ -1378,101 +1526,691 @@ class Ui_MainWindow(object):
         self.verticalLayout.addWidget(self.row_3)
 
         self.stackedWidget.addWidget(self.widgets)
-        self.new_page = QWidget()
-        self.new_page.setObjectName(u"new_page")
-        self.verticalLayout_20 = QVBoxLayout(self.new_page)
+        self.teacher_table = QWidget()
+        self.teacher_table.setObjectName(u"teacher_table")
+        self.gridLayout_8 = QGridLayout(self.teacher_table)
+        self.gridLayout_8.setObjectName(u"gridLayout_8")
+        self.welcome_2 = QLabel(self.teacher_table)
+        self.welcome_2.setObjectName(u"welcome_2")
+
+        self.gridLayout_8.addWidget(self.welcome_2, 0, 0, 1, 2)
+
+        self.btn_pwd_change_2 = QPushButton(self.teacher_table)
+        self.btn_pwd_change_2.setObjectName(u"btn_pwd_change_2")
+        self.btn_pwd_change_2.setMinimumSize(QSize(150, 30))
+        self.btn_pwd_change_2.setFont(font)
+        self.btn_pwd_change_2.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_pwd_change_2.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        self.btn_pwd_change_2.setIcon(icon4)
+
+        self.gridLayout_8.addWidget(self.btn_pwd_change_2, 1, 0, 1, 1)
+
+        self.btn_grade_change = QPushButton(self.teacher_table)
+        self.btn_grade_change.setObjectName(u"btn_grade_change")
+        self.btn_grade_change.setMinimumSize(QSize(150, 30))
+        self.btn_grade_change.setFont(font)
+        self.btn_grade_change.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_grade_change.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        self.btn_grade_change.setIcon(icon6)
+
+        self.gridLayout_8.addWidget(self.btn_grade_change, 1, 1, 1, 1)
+
+        self.btn_course_check_2 = QPushButton(self.teacher_table)
+        self.btn_course_check_2.setObjectName(u"btn_course_check_2")
+        self.btn_course_check_2.setMinimumSize(QSize(150, 30))
+        self.btn_course_check_2.setFont(font)
+        self.btn_course_check_2.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_course_check_2.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        self.btn_course_check_2.setIcon(icon5)
+
+        self.gridLayout_8.addWidget(self.btn_course_check_2, 3, 0, 1, 1)
+
+        self.btn_info_change_2 = QPushButton(self.teacher_table)
+        self.btn_info_change_2.setObjectName(u"btn_info_change_2")
+        self.btn_info_change_2.setMinimumSize(QSize(150, 30))
+        self.btn_info_change_2.setFont(font)
+        self.btn_info_change_2.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_info_change_2.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        self.btn_info_change_2.setIcon(icon7)
+
+        self.gridLayout_8.addWidget(self.btn_info_change_2, 3, 1, 1, 1)
+
+        self.stackedWidget.addWidget(self.teacher_table)
+        self.info_page = QWidget()
+        self.info_page.setObjectName(u"info_page")
+        self.gridLayout_19 = QGridLayout(self.info_page)
+        self.gridLayout_19.setObjectName(u"gridLayout_19")
+        self.btn_info_change_confirm_3 = QPushButton(self.info_page)
+        self.btn_info_change_confirm_3.setObjectName(u"btn_info_change_confirm_3")
+        self.btn_info_change_confirm_3.setMinimumSize(QSize(150, 30))
+        self.btn_info_change_confirm_3.setFont(font)
+        self.btn_info_change_confirm_3.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_info_change_confirm_3.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        self.btn_info_change_confirm_3.setIcon(icon4)
+
+        self.gridLayout_19.addWidget(self.btn_info_change_confirm_3, 3, 2, 1, 1)
+
+        self.welcome_4 = QLabel(self.info_page)
+        self.welcome_4.setObjectName(u"welcome_4")
+
+        self.gridLayout_19.addWidget(self.welcome_4, 1, 0, 1, 1)
+
+        self.changed_info = QLineEdit(self.info_page)
+        self.changed_info.setObjectName(u"changed_info")
+        self.changed_info.setMinimumSize(QSize(0, 30))
+        self.changed_info.setStyleSheet(u"background-color: rgb(33, 37, 43);")
+
+        self.gridLayout_19.addWidget(self.changed_info, 2, 0, 1, 3)
+
+        self.student_info = QTableWidget(self.info_page)
+        if (self.student_info.columnCount() < 6):
+            self.student_info.setColumnCount(6)
+        __qtablewidgetitem24 = QTableWidgetItem()
+        self.student_info.setHorizontalHeaderItem(0, __qtablewidgetitem24)
+        __qtablewidgetitem25 = QTableWidgetItem()
+        self.student_info.setHorizontalHeaderItem(1, __qtablewidgetitem25)
+        __qtablewidgetitem26 = QTableWidgetItem()
+        self.student_info.setHorizontalHeaderItem(2, __qtablewidgetitem26)
+        __qtablewidgetitem27 = QTableWidgetItem()
+        self.student_info.setHorizontalHeaderItem(3, __qtablewidgetitem27)
+        __qtablewidgetitem28 = QTableWidgetItem()
+        self.student_info.setHorizontalHeaderItem(4, __qtablewidgetitem28)
+        __qtablewidgetitem29 = QTableWidgetItem()
+        self.student_info.setHorizontalHeaderItem(5, __qtablewidgetitem29)
+        if (self.student_info.rowCount() < 3):
+            self.student_info.setRowCount(3)
+        __qtablewidgetitem30 = QTableWidgetItem()
+        __qtablewidgetitem30.setFont(font4);
+        self.student_info.setVerticalHeaderItem(0, __qtablewidgetitem30)
+        __qtablewidgetitem31 = QTableWidgetItem()
+        self.student_info.setVerticalHeaderItem(1, __qtablewidgetitem31)
+        __qtablewidgetitem32 = QTableWidgetItem()
+        self.student_info.setVerticalHeaderItem(2, __qtablewidgetitem32)
+        __qtablewidgetitem33 = QTableWidgetItem()
+        self.student_info.setItem(0, 0, __qtablewidgetitem33)
+        __qtablewidgetitem34 = QTableWidgetItem()
+        self.student_info.setItem(0, 1, __qtablewidgetitem34)
+        __qtablewidgetitem35 = QTableWidgetItem()
+        self.student_info.setItem(0, 2, __qtablewidgetitem35)
+        __qtablewidgetitem36 = QTableWidgetItem()
+        self.student_info.setItem(0, 3, __qtablewidgetitem36)
+        __qtablewidgetitem37 = QTableWidgetItem()
+        self.student_info.setItem(0, 4, __qtablewidgetitem37)
+        __qtablewidgetitem38 = QTableWidgetItem()
+        self.student_info.setItem(0, 5, __qtablewidgetitem38)
+        self.student_info.setObjectName(u"student_info")
+        sizePolicy3.setHeightForWidth(self.student_info.sizePolicy().hasHeightForWidth())
+        self.student_info.setSizePolicy(sizePolicy3)
+        palette1 = QPalette()
+        palette1.setBrush(QPalette.Active, QPalette.WindowText, brush)
+        palette1.setBrush(QPalette.Active, QPalette.Button, brush1)
+        palette1.setBrush(QPalette.Active, QPalette.Text, brush)
+        palette1.setBrush(QPalette.Active, QPalette.ButtonText, brush)
+        brush5 = QBrush(QColor(0, 0, 0, 255))
+        brush5.setStyle(Qt.NoBrush)
+        palette1.setBrush(QPalette.Active, QPalette.Base, brush5)
+        palette1.setBrush(QPalette.Active, QPalette.Window, brush1)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette1.setBrush(QPalette.Active, QPalette.PlaceholderText, brush)
+#endif
+        palette1.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
+        palette1.setBrush(QPalette.Inactive, QPalette.Button, brush1)
+        palette1.setBrush(QPalette.Inactive, QPalette.Text, brush)
+        palette1.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
+        brush6 = QBrush(QColor(0, 0, 0, 255))
+        brush6.setStyle(Qt.NoBrush)
+        palette1.setBrush(QPalette.Inactive, QPalette.Base, brush6)
+        palette1.setBrush(QPalette.Inactive, QPalette.Window, brush1)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette1.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush)
+#endif
+        palette1.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
+        palette1.setBrush(QPalette.Disabled, QPalette.Button, brush1)
+        palette1.setBrush(QPalette.Disabled, QPalette.Text, brush)
+        palette1.setBrush(QPalette.Disabled, QPalette.ButtonText, brush)
+        brush7 = QBrush(QColor(0, 0, 0, 255))
+        brush7.setStyle(Qt.NoBrush)
+        palette1.setBrush(QPalette.Disabled, QPalette.Base, brush7)
+        palette1.setBrush(QPalette.Disabled, QPalette.Window, brush1)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette1.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush)
+#endif
+        self.student_info.setPalette(palette1)
+        self.student_info.setFrameShape(QFrame.NoFrame)
+        self.student_info.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
+        self.student_info.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
+        self.student_info.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.student_info.setSelectionMode(QAbstractItemView.SingleSelection)
+        self.student_info.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.student_info.setShowGrid(True)
+        self.student_info.setGridStyle(Qt.SolidLine)
+        self.student_info.setSortingEnabled(False)
+        self.student_info.horizontalHeader().setVisible(False)
+        self.student_info.horizontalHeader().setCascadingSectionResizes(True)
+        self.student_info.horizontalHeader().setDefaultSectionSize(200)
+        self.student_info.horizontalHeader().setStretchLastSection(True)
+        self.student_info.verticalHeader().setVisible(False)
+        self.student_info.verticalHeader().setCascadingSectionResizes(False)
+        self.student_info.verticalHeader().setHighlightSections(False)
+        self.student_info.verticalHeader().setStretchLastSection(True)
+
+        self.gridLayout_19.addWidget(self.student_info, 0, 0, 1, 3)
+
+        self.select_info = QComboBox(self.info_page)
+        self.select_info.addItem("")
+        self.select_info.addItem("")
+        self.select_info.addItem("")
+        self.select_info.addItem("")
+        self.select_info.setObjectName(u"select_info")
+        self.select_info.setFont(font)
+        self.select_info.setAutoFillBackground(False)
+        self.select_info.setStyleSheet(u"background-color: rgb(33, 37, 43);")
+        self.select_info.setIconSize(QSize(16, 16))
+        self.select_info.setFrame(True)
+
+        self.gridLayout_19.addWidget(self.select_info, 1, 1, 1, 1)
+
+        self.stackedWidget.addWidget(self.info_page)
+        self.agent_table = QWidget()
+        self.agent_table.setObjectName(u"agent_table")
+        self.gridLayout_9 = QGridLayout(self.agent_table)
+        self.gridLayout_9.setObjectName(u"gridLayout_9")
+        self.welcome_3 = QLabel(self.agent_table)
+        self.welcome_3.setObjectName(u"welcome_3")
+
+        self.gridLayout_9.addWidget(self.welcome_3, 0, 0, 1, 1)
+
+        self.btn_pwd_change_student = QPushButton(self.agent_table)
+        self.btn_pwd_change_student.setObjectName(u"btn_pwd_change_student")
+        self.btn_pwd_change_student.setMinimumSize(QSize(150, 30))
+        self.btn_pwd_change_student.setFont(font)
+        self.btn_pwd_change_student.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_pwd_change_student.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        self.btn_pwd_change_student.setIcon(icon4)
+
+        self.gridLayout_9.addWidget(self.btn_pwd_change_student, 2, 1, 1, 1)
+
+        self.btn_pwd_change_teacher = QPushButton(self.agent_table)
+        self.btn_pwd_change_teacher.setObjectName(u"btn_pwd_change_teacher")
+        self.btn_pwd_change_teacher.setMinimumSize(QSize(150, 30))
+        self.btn_pwd_change_teacher.setFont(font)
+        self.btn_pwd_change_teacher.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_pwd_change_teacher.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        self.btn_pwd_change_teacher.setIcon(icon4)
+
+        self.gridLayout_9.addWidget(self.btn_pwd_change_teacher, 3, 0, 1, 1)
+
+        self.btn_remove_course = QPushButton(self.agent_table)
+        self.btn_remove_course.setObjectName(u"btn_remove_course")
+        self.btn_remove_course.setMinimumSize(QSize(150, 30))
+        self.btn_remove_course.setFont(font)
+        self.btn_remove_course.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_remove_course.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        self.btn_remove_course.setIcon(icon4)
+
+        self.gridLayout_9.addWidget(self.btn_remove_course, 4, 0, 1, 1)
+
+        self.btn_course_info_edit = QPushButton(self.agent_table)
+        self.btn_course_info_edit.setObjectName(u"btn_course_info_edit")
+        self.btn_course_info_edit.setMinimumSize(QSize(150, 30))
+        self.btn_course_info_edit.setFont(font)
+        self.btn_course_info_edit.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_course_info_edit.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        self.btn_course_info_edit.setIcon(icon4)
+
+        self.gridLayout_9.addWidget(self.btn_course_info_edit, 4, 1, 1, 1)
+
+        self.btn_pwd_change_agent = QPushButton(self.agent_table)
+        self.btn_pwd_change_agent.setObjectName(u"btn_pwd_change_agent")
+        self.btn_pwd_change_agent.setMinimumSize(QSize(150, 30))
+        self.btn_pwd_change_agent.setFont(font)
+        self.btn_pwd_change_agent.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_pwd_change_agent.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        self.btn_pwd_change_agent.setIcon(icon4)
+
+        self.gridLayout_9.addWidget(self.btn_pwd_change_agent, 2, 0, 1, 1)
+
+        self.btn_add_course = QPushButton(self.agent_table)
+        self.btn_add_course.setObjectName(u"btn_add_course")
+        self.btn_add_course.setMinimumSize(QSize(150, 30))
+        self.btn_add_course.setFont(font)
+        self.btn_add_course.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_add_course.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        self.btn_add_course.setIcon(icon4)
+
+        self.gridLayout_9.addWidget(self.btn_add_course, 3, 1, 1, 1)
+
+        self.stackedWidget.addWidget(self.agent_table)
+        self.login_page = QWidget()
+        self.login_page.setObjectName(u"login_page")
+        self.verticalLayout_20 = QVBoxLayout(self.login_page)
         self.verticalLayout_20.setObjectName(u"verticalLayout_20")
-        self.label = QLabel(self.new_page)
-        self.label.setObjectName(u"label")
-        self.label.setAlignment(Qt.AlignCenter)
+        self.frame = QFrame(self.login_page)
+        self.frame.setObjectName(u"frame")
+        self.frame.setFrameShape(QFrame.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Raised)
+        self.gridLayout_3 = QGridLayout(self.frame)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.label_2 = QLabel(self.frame)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setStyleSheet(u"")
 
-        self.verticalLayout_20.addWidget(self.label)
+        self.gridLayout_3.addWidget(self.label_2, 0, 1, 1, 1)
 
-        self.stackedWidget.addWidget(self.new_page)
+        self.id = QLineEdit(self.frame)
+        self.id.setObjectName(u"id")
+        self.id.setMinimumSize(QSize(0, 30))
+        self.id.setStyleSheet(u"background-color: rgb(33, 37, 43);")
+
+        self.gridLayout_3.addWidget(self.id, 1, 0, 1, 3)
+
+        self.pwd = QLineEdit(self.frame)
+        self.pwd.setObjectName(u"pwd")
+        self.pwd.setMinimumSize(QSize(0, 30))
+        self.pwd.setStyleSheet(u"background-color: rgb(33, 37, 43);")
+
+        self.gridLayout_3.addWidget(self.pwd, 2, 0, 1, 3)
+
+        self.btn_student_login = QPushButton(self.frame)
+        self.btn_student_login.setObjectName(u"btn_student_login")
+        self.btn_student_login.setMinimumSize(QSize(150, 30))
+        self.btn_student_login.setFont(font)
+        self.btn_student_login.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_student_login.setStyleSheet(u"background-color: rgb(52, 59, 72);\n"
+"")
+        icon10 = QIcon()
+        icon10.addFile(u"images/icons/cil-user.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_student_login.setIcon(icon10)
+
+        self.gridLayout_3.addWidget(self.btn_student_login, 3, 0, 1, 1)
+
+        self.btn_teacher_login = QPushButton(self.frame)
+        self.btn_teacher_login.setObjectName(u"btn_teacher_login")
+        self.btn_teacher_login.setMinimumSize(QSize(150, 30))
+        self.btn_teacher_login.setFont(font)
+        self.btn_teacher_login.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_teacher_login.setStyleSheet(u"background-color: rgb(52, 59, 72);\n"
+"")
+        icon11 = QIcon()
+        icon11.addFile(u":/icons/images/icons/cil-user-follow.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_teacher_login.setIcon(icon11)
+
+        self.gridLayout_3.addWidget(self.btn_teacher_login, 3, 1, 1, 1)
+
+        self.btn_agent_login = QPushButton(self.frame)
+        self.btn_agent_login.setObjectName(u"btn_agent_login")
+        self.btn_agent_login.setMinimumSize(QSize(150, 30))
+        self.btn_agent_login.setFont(font)
+        self.btn_agent_login.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_agent_login.setStyleSheet(u"background-color: rgb(52, 59, 72);\n"
+"")
+        icon12 = QIcon()
+        icon12.addFile(u":/icons/images/icons/cil-user-female.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_agent_login.setIcon(icon12)
+
+        self.gridLayout_3.addWidget(self.btn_agent_login, 3, 2, 1, 1)
+
+
+        self.verticalLayout_20.addWidget(self.frame)
+
+        self.stackedWidget.addWidget(self.login_page)
+        self.check_page = QWidget()
+        self.check_page.setObjectName(u"check_page")
+        self.gridLayout_6 = QGridLayout(self.check_page)
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.course_display = QTableWidget(self.check_page)
+        if (self.course_display.columnCount() < 9):
+            self.course_display.setColumnCount(9)
+        __qtablewidgetitem39 = QTableWidgetItem()
+        self.course_display.setHorizontalHeaderItem(0, __qtablewidgetitem39)
+        __qtablewidgetitem40 = QTableWidgetItem()
+        self.course_display.setHorizontalHeaderItem(1, __qtablewidgetitem40)
+        __qtablewidgetitem41 = QTableWidgetItem()
+        self.course_display.setHorizontalHeaderItem(2, __qtablewidgetitem41)
+        __qtablewidgetitem42 = QTableWidgetItem()
+        self.course_display.setHorizontalHeaderItem(3, __qtablewidgetitem42)
+        __qtablewidgetitem43 = QTableWidgetItem()
+        self.course_display.setHorizontalHeaderItem(4, __qtablewidgetitem43)
+        __qtablewidgetitem44 = QTableWidgetItem()
+        self.course_display.setHorizontalHeaderItem(5, __qtablewidgetitem44)
+        __qtablewidgetitem45 = QTableWidgetItem()
+        self.course_display.setHorizontalHeaderItem(6, __qtablewidgetitem45)
+        __qtablewidgetitem46 = QTableWidgetItem()
+        self.course_display.setHorizontalHeaderItem(7, __qtablewidgetitem46)
+        __qtablewidgetitem47 = QTableWidgetItem()
+        self.course_display.setHorizontalHeaderItem(8, __qtablewidgetitem47)
+        if (self.course_display.rowCount() < 16):
+            self.course_display.setRowCount(16)
+        __qtablewidgetitem48 = QTableWidgetItem()
+        __qtablewidgetitem48.setFont(font4);
+        self.course_display.setVerticalHeaderItem(0, __qtablewidgetitem48)
+        __qtablewidgetitem49 = QTableWidgetItem()
+        self.course_display.setVerticalHeaderItem(1, __qtablewidgetitem49)
+        __qtablewidgetitem50 = QTableWidgetItem()
+        self.course_display.setVerticalHeaderItem(2, __qtablewidgetitem50)
+        __qtablewidgetitem51 = QTableWidgetItem()
+        self.course_display.setVerticalHeaderItem(3, __qtablewidgetitem51)
+        __qtablewidgetitem52 = QTableWidgetItem()
+        self.course_display.setVerticalHeaderItem(4, __qtablewidgetitem52)
+        __qtablewidgetitem53 = QTableWidgetItem()
+        self.course_display.setVerticalHeaderItem(5, __qtablewidgetitem53)
+        __qtablewidgetitem54 = QTableWidgetItem()
+        self.course_display.setVerticalHeaderItem(6, __qtablewidgetitem54)
+        __qtablewidgetitem55 = QTableWidgetItem()
+        self.course_display.setVerticalHeaderItem(7, __qtablewidgetitem55)
+        __qtablewidgetitem56 = QTableWidgetItem()
+        self.course_display.setVerticalHeaderItem(8, __qtablewidgetitem56)
+        __qtablewidgetitem57 = QTableWidgetItem()
+        self.course_display.setVerticalHeaderItem(9, __qtablewidgetitem57)
+        __qtablewidgetitem58 = QTableWidgetItem()
+        self.course_display.setVerticalHeaderItem(10, __qtablewidgetitem58)
+        __qtablewidgetitem59 = QTableWidgetItem()
+        self.course_display.setVerticalHeaderItem(11, __qtablewidgetitem59)
+        __qtablewidgetitem60 = QTableWidgetItem()
+        self.course_display.setVerticalHeaderItem(12, __qtablewidgetitem60)
+        __qtablewidgetitem61 = QTableWidgetItem()
+        self.course_display.setVerticalHeaderItem(13, __qtablewidgetitem61)
+        __qtablewidgetitem62 = QTableWidgetItem()
+        self.course_display.setVerticalHeaderItem(14, __qtablewidgetitem62)
+        __qtablewidgetitem63 = QTableWidgetItem()
+        self.course_display.setVerticalHeaderItem(15, __qtablewidgetitem63)
+        __qtablewidgetitem64 = QTableWidgetItem()
+        self.course_display.setItem(0, 0, __qtablewidgetitem64)
+        __qtablewidgetitem65 = QTableWidgetItem()
+        self.course_display.setItem(0, 1, __qtablewidgetitem65)
+        __qtablewidgetitem66 = QTableWidgetItem()
+        self.course_display.setItem(0, 2, __qtablewidgetitem66)
+        __qtablewidgetitem67 = QTableWidgetItem()
+        self.course_display.setItem(0, 3, __qtablewidgetitem67)
+        __qtablewidgetitem68 = QTableWidgetItem()
+        self.course_display.setItem(0, 4, __qtablewidgetitem68)
+        __qtablewidgetitem69 = QTableWidgetItem()
+        self.course_display.setItem(0, 5, __qtablewidgetitem69)
+        __qtablewidgetitem70 = QTableWidgetItem()
+        self.course_display.setItem(0, 6, __qtablewidgetitem70)
+        __qtablewidgetitem71 = QTableWidgetItem()
+        self.course_display.setItem(0, 7, __qtablewidgetitem71)
+        __qtablewidgetitem72 = QTableWidgetItem()
+        self.course_display.setItem(0, 8, __qtablewidgetitem72)
+        self.course_display.setObjectName(u"course_display")
+        sizePolicy3.setHeightForWidth(self.course_display.sizePolicy().hasHeightForWidth())
+        self.course_display.setSizePolicy(sizePolicy3)
+        palette2 = QPalette()
+        palette2.setBrush(QPalette.Active, QPalette.WindowText, brush)
+        palette2.setBrush(QPalette.Active, QPalette.Button, brush1)
+        palette2.setBrush(QPalette.Active, QPalette.Text, brush)
+        palette2.setBrush(QPalette.Active, QPalette.ButtonText, brush)
+        brush8 = QBrush(QColor(0, 0, 0, 255))
+        brush8.setStyle(Qt.NoBrush)
+        palette2.setBrush(QPalette.Active, QPalette.Base, brush8)
+        palette2.setBrush(QPalette.Active, QPalette.Window, brush1)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette2.setBrush(QPalette.Active, QPalette.PlaceholderText, brush)
+#endif
+        palette2.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
+        palette2.setBrush(QPalette.Inactive, QPalette.Button, brush1)
+        palette2.setBrush(QPalette.Inactive, QPalette.Text, brush)
+        palette2.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
+        brush9 = QBrush(QColor(0, 0, 0, 255))
+        brush9.setStyle(Qt.NoBrush)
+        palette2.setBrush(QPalette.Inactive, QPalette.Base, brush9)
+        palette2.setBrush(QPalette.Inactive, QPalette.Window, brush1)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette2.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush)
+#endif
+        palette2.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
+        palette2.setBrush(QPalette.Disabled, QPalette.Button, brush1)
+        palette2.setBrush(QPalette.Disabled, QPalette.Text, brush)
+        palette2.setBrush(QPalette.Disabled, QPalette.ButtonText, brush)
+        brush10 = QBrush(QColor(0, 0, 0, 255))
+        brush10.setStyle(Qt.NoBrush)
+        palette2.setBrush(QPalette.Disabled, QPalette.Base, brush10)
+        palette2.setBrush(QPalette.Disabled, QPalette.Window, brush1)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette2.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush)
+#endif
+        self.course_display.setPalette(palette2)
+        self.course_display.setFrameShape(QFrame.NoFrame)
+        self.course_display.setLineWidth(1)
+        self.course_display.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
+        self.course_display.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
+        self.course_display.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.course_display.setSelectionMode(QAbstractItemView.SingleSelection)
+        self.course_display.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.course_display.setShowGrid(True)
+        self.course_display.setGridStyle(Qt.SolidLine)
+        self.course_display.setSortingEnabled(False)
+        self.course_display.horizontalHeader().setVisible(False)
+        self.course_display.horizontalHeader().setCascadingSectionResizes(True)
+        self.course_display.horizontalHeader().setDefaultSectionSize(90)
+        self.course_display.horizontalHeader().setStretchLastSection(True)
+        self.course_display.verticalHeader().setVisible(False)
+        self.course_display.verticalHeader().setCascadingSectionResizes(False)
+        self.course_display.verticalHeader().setMinimumSectionSize(5)
+        self.course_display.verticalHeader().setHighlightSections(False)
+        self.course_display.verticalHeader().setStretchLastSection(True)
+
+        self.gridLayout_6.addWidget(self.course_display, 0, 0, 1, 1)
+
+        self.stackedWidget.addWidget(self.check_page)
+        self.pwd_change_page = QWidget()
+        self.pwd_change_page.setObjectName(u"pwd_change_page")
+        self.horizontalLayout_6 = QHBoxLayout(self.pwd_change_page)
+        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
+        self.frame_2 = QFrame(self.pwd_change_page)
+        self.frame_2.setObjectName(u"frame_2")
+        self.frame_2.setFrameShape(QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Raised)
+        self.gridLayout_5 = QGridLayout(self.frame_2)
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.pwd_current = QLineEdit(self.frame_2)
+        self.pwd_current.setObjectName(u"pwd_current")
+        self.pwd_current.setMinimumSize(QSize(0, 30))
+        self.pwd_current.setStyleSheet(u"background-color: rgb(33, 37, 43);")
+
+        self.gridLayout_5.addWidget(self.pwd_current, 0, 0, 1, 1)
+
+        self.pwd_new = QLineEdit(self.frame_2)
+        self.pwd_new.setObjectName(u"pwd_new")
+        self.pwd_new.setMinimumSize(QSize(0, 30))
+        self.pwd_new.setStyleSheet(u"background-color: rgb(33, 37, 43);")
+
+        self.gridLayout_5.addWidget(self.pwd_new, 1, 0, 1, 1)
+
+        self.pwd_new_check = QLineEdit(self.frame_2)
+        self.pwd_new_check.setObjectName(u"pwd_new_check")
+        self.pwd_new_check.setMinimumSize(QSize(0, 30))
+        self.pwd_new_check.setStyleSheet(u"background-color: rgb(33, 37, 43);")
+
+        self.gridLayout_5.addWidget(self.pwd_new_check, 2, 0, 1, 1)
+
+        self.btn_pwd_change_confirm = QPushButton(self.frame_2)
+        self.btn_pwd_change_confirm.setObjectName(u"btn_pwd_change_confirm")
+        self.btn_pwd_change_confirm.setMinimumSize(QSize(150, 30))
+        self.btn_pwd_change_confirm.setFont(font)
+        self.btn_pwd_change_confirm.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btn_pwd_change_confirm.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        self.btn_pwd_change_confirm.setIcon(icon4)
+
+        self.gridLayout_5.addWidget(self.btn_pwd_change_confirm, 3, 0, 1, 1)
+
+
+        self.horizontalLayout_6.addWidget(self.frame_2)
+
+        self.stackedWidget.addWidget(self.pwd_change_page)
+        self.choose_course_page = QWidget()
+        self.choose_course_page.setObjectName(u"choose_course_page")
+        self.gridLayout_7 = QGridLayout(self.choose_course_page)
+        self.gridLayout_7.setObjectName(u"gridLayout_7")
+        self.course_id = QLineEdit(self.choose_course_page)
+        self.course_id.setObjectName(u"course_id")
+        self.course_id.setMinimumSize(QSize(0, 30))
+        self.course_id.setStyleSheet(u"background-color: rgb(33, 37, 43);")
+
+        self.gridLayout_7.addWidget(self.course_id, 0, 0, 1, 1)
+
+        self.confirm_btn = QPushButton(self.choose_course_page)
+        self.confirm_btn.setObjectName(u"confirm_btn")
+        self.confirm_btn.setMinimumSize(QSize(150, 30))
+        self.confirm_btn.setFont(font)
+        self.confirm_btn.setCursor(QCursor(Qt.PointingHandCursor))
+        self.confirm_btn.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        icon13 = QIcon()
+        icon13.addFile(u":/icons/images/icons/cil-check-alt.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.confirm_btn.setIcon(icon13)
+
+        self.gridLayout_7.addWidget(self.confirm_btn, 0, 1, 1, 1)
+
+        self.choose_check_btn = QCheckBox(self.choose_course_page)
+        self.choose_check_btn.setObjectName(u"choose_check_btn")
+        self.choose_check_btn.setAutoFillBackground(False)
+        self.choose_check_btn.setStyleSheet(u"")
+
+        self.gridLayout_7.addWidget(self.choose_check_btn, 1, 1, 1, 1)
+
+        self.quit_check_btn = QCheckBox(self.choose_course_page)
+        self.quit_check_btn.setObjectName(u"quit_check_btn")
+        self.quit_check_btn.setAutoFillBackground(False)
+        self.quit_check_btn.setStyleSheet(u"")
+
+        self.gridLayout_7.addWidget(self.quit_check_btn, 2, 1, 1, 1)
+
+        self.course_all_display = QTableWidget(self.choose_course_page)
+        if (self.course_all_display.columnCount() < 9):
+            self.course_all_display.setColumnCount(9)
+        __qtablewidgetitem73 = QTableWidgetItem()
+        self.course_all_display.setHorizontalHeaderItem(0, __qtablewidgetitem73)
+        __qtablewidgetitem74 = QTableWidgetItem()
+        self.course_all_display.setHorizontalHeaderItem(1, __qtablewidgetitem74)
+        __qtablewidgetitem75 = QTableWidgetItem()
+        self.course_all_display.setHorizontalHeaderItem(2, __qtablewidgetitem75)
+        __qtablewidgetitem76 = QTableWidgetItem()
+        self.course_all_display.setHorizontalHeaderItem(3, __qtablewidgetitem76)
+        __qtablewidgetitem77 = QTableWidgetItem()
+        self.course_all_display.setHorizontalHeaderItem(4, __qtablewidgetitem77)
+        __qtablewidgetitem78 = QTableWidgetItem()
+        self.course_all_display.setHorizontalHeaderItem(5, __qtablewidgetitem78)
+        __qtablewidgetitem79 = QTableWidgetItem()
+        self.course_all_display.setHorizontalHeaderItem(6, __qtablewidgetitem79)
+        __qtablewidgetitem80 = QTableWidgetItem()
+        self.course_all_display.setHorizontalHeaderItem(7, __qtablewidgetitem80)
+        __qtablewidgetitem81 = QTableWidgetItem()
+        self.course_all_display.setHorizontalHeaderItem(8, __qtablewidgetitem81)
+        if (self.course_all_display.rowCount() < 16):
+            self.course_all_display.setRowCount(16)
+        __qtablewidgetitem82 = QTableWidgetItem()
+        __qtablewidgetitem82.setFont(font4);
+        self.course_all_display.setVerticalHeaderItem(0, __qtablewidgetitem82)
+        __qtablewidgetitem83 = QTableWidgetItem()
+        self.course_all_display.setVerticalHeaderItem(1, __qtablewidgetitem83)
+        __qtablewidgetitem84 = QTableWidgetItem()
+        self.course_all_display.setVerticalHeaderItem(2, __qtablewidgetitem84)
+        __qtablewidgetitem85 = QTableWidgetItem()
+        self.course_all_display.setVerticalHeaderItem(3, __qtablewidgetitem85)
+        __qtablewidgetitem86 = QTableWidgetItem()
+        self.course_all_display.setVerticalHeaderItem(4, __qtablewidgetitem86)
+        __qtablewidgetitem87 = QTableWidgetItem()
+        self.course_all_display.setVerticalHeaderItem(5, __qtablewidgetitem87)
+        __qtablewidgetitem88 = QTableWidgetItem()
+        self.course_all_display.setVerticalHeaderItem(6, __qtablewidgetitem88)
+        __qtablewidgetitem89 = QTableWidgetItem()
+        self.course_all_display.setVerticalHeaderItem(7, __qtablewidgetitem89)
+        __qtablewidgetitem90 = QTableWidgetItem()
+        self.course_all_display.setVerticalHeaderItem(8, __qtablewidgetitem90)
+        __qtablewidgetitem91 = QTableWidgetItem()
+        self.course_all_display.setVerticalHeaderItem(9, __qtablewidgetitem91)
+        __qtablewidgetitem92 = QTableWidgetItem()
+        self.course_all_display.setVerticalHeaderItem(10, __qtablewidgetitem92)
+        __qtablewidgetitem93 = QTableWidgetItem()
+        self.course_all_display.setVerticalHeaderItem(11, __qtablewidgetitem93)
+        __qtablewidgetitem94 = QTableWidgetItem()
+        self.course_all_display.setVerticalHeaderItem(12, __qtablewidgetitem94)
+        __qtablewidgetitem95 = QTableWidgetItem()
+        self.course_all_display.setVerticalHeaderItem(13, __qtablewidgetitem95)
+        __qtablewidgetitem96 = QTableWidgetItem()
+        self.course_all_display.setVerticalHeaderItem(14, __qtablewidgetitem96)
+        __qtablewidgetitem97 = QTableWidgetItem()
+        self.course_all_display.setVerticalHeaderItem(15, __qtablewidgetitem97)
+        __qtablewidgetitem98 = QTableWidgetItem()
+        self.course_all_display.setItem(0, 0, __qtablewidgetitem98)
+        __qtablewidgetitem99 = QTableWidgetItem()
+        self.course_all_display.setItem(0, 1, __qtablewidgetitem99)
+        __qtablewidgetitem100 = QTableWidgetItem()
+        self.course_all_display.setItem(0, 2, __qtablewidgetitem100)
+        __qtablewidgetitem101 = QTableWidgetItem()
+        self.course_all_display.setItem(0, 3, __qtablewidgetitem101)
+        __qtablewidgetitem102 = QTableWidgetItem()
+        self.course_all_display.setItem(0, 4, __qtablewidgetitem102)
+        __qtablewidgetitem103 = QTableWidgetItem()
+        self.course_all_display.setItem(0, 5, __qtablewidgetitem103)
+        __qtablewidgetitem104 = QTableWidgetItem()
+        self.course_all_display.setItem(0, 6, __qtablewidgetitem104)
+        __qtablewidgetitem105 = QTableWidgetItem()
+        self.course_all_display.setItem(0, 7, __qtablewidgetitem105)
+        self.course_all_display.setObjectName(u"course_all_display")
+        sizePolicy3.setHeightForWidth(self.course_all_display.sizePolicy().hasHeightForWidth())
+        self.course_all_display.setSizePolicy(sizePolicy3)
+        palette3 = QPalette()
+        palette3.setBrush(QPalette.Active, QPalette.WindowText, brush)
+        palette3.setBrush(QPalette.Active, QPalette.Button, brush1)
+        palette3.setBrush(QPalette.Active, QPalette.Text, brush)
+        palette3.setBrush(QPalette.Active, QPalette.ButtonText, brush)
+        brush11 = QBrush(QColor(0, 0, 0, 255))
+        brush11.setStyle(Qt.NoBrush)
+        palette3.setBrush(QPalette.Active, QPalette.Base, brush11)
+        palette3.setBrush(QPalette.Active, QPalette.Window, brush1)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette3.setBrush(QPalette.Active, QPalette.PlaceholderText, brush)
+#endif
+        palette3.setBrush(QPalette.Inactive, QPalette.WindowText, brush)
+        palette3.setBrush(QPalette.Inactive, QPalette.Button, brush1)
+        palette3.setBrush(QPalette.Inactive, QPalette.Text, brush)
+        palette3.setBrush(QPalette.Inactive, QPalette.ButtonText, brush)
+        brush12 = QBrush(QColor(0, 0, 0, 255))
+        brush12.setStyle(Qt.NoBrush)
+        palette3.setBrush(QPalette.Inactive, QPalette.Base, brush12)
+        palette3.setBrush(QPalette.Inactive, QPalette.Window, brush1)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette3.setBrush(QPalette.Inactive, QPalette.PlaceholderText, brush)
+#endif
+        palette3.setBrush(QPalette.Disabled, QPalette.WindowText, brush)
+        palette3.setBrush(QPalette.Disabled, QPalette.Button, brush1)
+        palette3.setBrush(QPalette.Disabled, QPalette.Text, brush)
+        palette3.setBrush(QPalette.Disabled, QPalette.ButtonText, brush)
+        brush13 = QBrush(QColor(0, 0, 0, 255))
+        brush13.setStyle(Qt.NoBrush)
+        palette3.setBrush(QPalette.Disabled, QPalette.Base, brush13)
+        palette3.setBrush(QPalette.Disabled, QPalette.Window, brush1)
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette3.setBrush(QPalette.Disabled, QPalette.PlaceholderText, brush)
+#endif
+        self.course_all_display.setPalette(palette3)
+        self.course_all_display.setFrameShape(QFrame.NoFrame)
+        self.course_all_display.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
+        self.course_all_display.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
+        self.course_all_display.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.course_all_display.setSelectionMode(QAbstractItemView.SingleSelection)
+        self.course_all_display.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.course_all_display.setShowGrid(True)
+        self.course_all_display.setGridStyle(Qt.SolidLine)
+        self.course_all_display.setSortingEnabled(False)
+        self.course_all_display.horizontalHeader().setVisible(False)
+        self.course_all_display.horizontalHeader().setCascadingSectionResizes(True)
+        self.course_all_display.horizontalHeader().setDefaultSectionSize(90)
+        self.course_all_display.horizontalHeader().setStretchLastSection(True)
+        self.course_all_display.verticalHeader().setVisible(False)
+        self.course_all_display.verticalHeader().setCascadingSectionResizes(False)
+        self.course_all_display.verticalHeader().setHighlightSections(False)
+        self.course_all_display.verticalHeader().setStretchLastSection(True)
+
+        self.gridLayout_7.addWidget(self.course_all_display, 3, 0, 1, 2)
+
+        self.stackedWidget.addWidget(self.choose_course_page)
 
         self.verticalLayout_15.addWidget(self.stackedWidget)
 
 
         self.horizontalLayout_4.addWidget(self.pagesContainer)
-
-        self.extraRightBox = QFrame(self.content)
-        self.extraRightBox.setObjectName(u"extraRightBox")
-        self.extraRightBox.setMinimumSize(QSize(0, 0))
-        self.extraRightBox.setMaximumSize(QSize(0, 16777215))
-        self.extraRightBox.setFrameShape(QFrame.NoFrame)
-        self.extraRightBox.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_7 = QVBoxLayout(self.extraRightBox)
-        self.verticalLayout_7.setSpacing(0)
-        self.verticalLayout_7.setObjectName(u"verticalLayout_7")
-        self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
-        self.themeSettingsTopDetail = QFrame(self.extraRightBox)
-        self.themeSettingsTopDetail.setObjectName(u"themeSettingsTopDetail")
-        self.themeSettingsTopDetail.setMaximumSize(QSize(16777215, 3))
-        self.themeSettingsTopDetail.setFrameShape(QFrame.NoFrame)
-        self.themeSettingsTopDetail.setFrameShadow(QFrame.Raised)
-
-        self.verticalLayout_7.addWidget(self.themeSettingsTopDetail)
-
-        self.contentSettings = QFrame(self.extraRightBox)
-        self.contentSettings.setObjectName(u"contentSettings")
-        self.contentSettings.setFrameShape(QFrame.NoFrame)
-        self.contentSettings.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_13 = QVBoxLayout(self.contentSettings)
-        self.verticalLayout_13.setSpacing(0)
-        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
-        self.verticalLayout_13.setContentsMargins(0, 0, 0, 0)
-        self.topMenus = QFrame(self.contentSettings)
-        self.topMenus.setObjectName(u"topMenus")
-        self.topMenus.setFrameShape(QFrame.NoFrame)
-        self.topMenus.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_14 = QVBoxLayout(self.topMenus)
-        self.verticalLayout_14.setSpacing(0)
-        self.verticalLayout_14.setObjectName(u"verticalLayout_14")
-        self.verticalLayout_14.setContentsMargins(0, 0, 0, 0)
-        self.btn_message = QPushButton(self.topMenus)
-        self.btn_message.setObjectName(u"btn_message")
-        sizePolicy.setHeightForWidth(self.btn_message.sizePolicy().hasHeightForWidth())
-        self.btn_message.setSizePolicy(sizePolicy)
-        self.btn_message.setMinimumSize(QSize(0, 45))
-        self.btn_message.setFont(font)
-        self.btn_message.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_message.setLayoutDirection(Qt.LeftToRight)
-        self.btn_message.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-envelope-open.png);")
-
-        self.verticalLayout_14.addWidget(self.btn_message)
-
-        self.btn_print = QPushButton(self.topMenus)
-        self.btn_print.setObjectName(u"btn_print")
-        sizePolicy.setHeightForWidth(self.btn_print.sizePolicy().hasHeightForWidth())
-        self.btn_print.setSizePolicy(sizePolicy)
-        self.btn_print.setMinimumSize(QSize(0, 45))
-        self.btn_print.setFont(font)
-        self.btn_print.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_print.setLayoutDirection(Qt.LeftToRight)
-        self.btn_print.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-print.png);")
-
-        self.verticalLayout_14.addWidget(self.btn_print)
-
-        self.btn_logout = QPushButton(self.topMenus)
-        self.btn_logout.setObjectName(u"btn_logout")
-        sizePolicy.setHeightForWidth(self.btn_logout.sizePolicy().hasHeightForWidth())
-        self.btn_logout.setSizePolicy(sizePolicy)
-        self.btn_logout.setMinimumSize(QSize(0, 45))
-        self.btn_logout.setFont(font)
-        self.btn_logout.setCursor(QCursor(Qt.PointingHandCursor))
-        self.btn_logout.setLayoutDirection(Qt.LeftToRight)
-        self.btn_logout.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-account-logout.png);")
-
-        self.verticalLayout_14.addWidget(self.btn_logout)
-
-
-        self.verticalLayout_13.addWidget(self.topMenus, 0, Qt.AlignTop)
-
-
-        self.verticalLayout_7.addWidget(self.contentSettings)
-
-
-        self.horizontalLayout_4.addWidget(self.extraRightBox)
 
 
         self.verticalLayout_6.addWidget(self.content)
@@ -1491,7 +2229,7 @@ class Ui_MainWindow(object):
         self.creditsLabel.setObjectName(u"creditsLabel")
         self.creditsLabel.setMaximumSize(QSize(16777215, 16))
         font5 = QFont()
-        font5.setFamily(u"Segoe UI")
+        font5.setFamilies([u"Segoe UI"])
         font5.setBold(False)
         font5.setItalic(False)
         self.creditsLabel.setFont(font5)
@@ -1530,7 +2268,8 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(4)
+        self.select_info.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1542,8 +2281,8 @@ class Ui_MainWindow(object):
         self.titleLeftDescription.setText(QCoreApplication.translate("MainWindow", u"Modern GUI / Flat Style", None))
         self.toggleButton.setText(QCoreApplication.translate("MainWindow", u"Hide", None))
         self.btn_home.setText(QCoreApplication.translate("MainWindow", u"Home", None))
-        self.btn_widgets.setText(QCoreApplication.translate("MainWindow", u"Widgets", None))
         self.btn_new.setText(QCoreApplication.translate("MainWindow", u"New", None))
+        self.btn_widgets.setText(QCoreApplication.translate("MainWindow", u"Widgets", None))
         self.btn_save.setText(QCoreApplication.translate("MainWindow", u"Save", None))
         self.btn_exit.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
         self.toggleLeftBox.setText(QCoreApplication.translate("MainWindow", u"Left Box", None))
@@ -1558,18 +2297,19 @@ class Ui_MainWindow(object):
         self.textEdit.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
 "</style></head><body style=\" font-family:'Segoe UI'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600; color:#ff79c6;\">PyDracula</span></p>\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#ffffff;\">An interface created using Python and PySide (support for PyQt), and with colors based on the Dracula theme created by Zeno Rocha.</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-inde"
-                        "nt:0; text-indent:0px;\"><span style=\" color:#ffffff;\">MIT License</span></p>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-l"
+                        "eft:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#ffffff;\">MIT License</span></p>\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#bd93f9;\">Created by: Wanderson M. Pimenta</span></p>\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600; color:#ff79c6;\">Convert UI</span></p>\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt; color:#ffffff;\">pyside6-uic main.ui &gt; ui_main.py</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600; color:#ff79c6;\">Convert QRC</span></p>\n"
-"<p align=\"center\" "
-                        "style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt; color:#ffffff;\">pyside6-rcc resources.qrc -o resources_rc.py</span></p></body></html>", None))
-        self.titleRightInfo.setText(QCoreApplication.translate("MainWindow", u"PyDracula APP - Theme with colors based on Dracula for Python.", None))
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600; color:#ff79c6;\">Conver"
+                        "t QRC</span></p>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt; color:#ffffff;\">pyside6-rcc resources.qrc -o resources_rc.py</span></p></body></html>", None))
+        self.titleRightInfo.setText(QCoreApplication.translate("MainWindow", u"Course-Choose-System", None))
 #if QT_CONFIG(tooltip)
         self.settingsTopBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Settings", None))
 #endif // QT_CONFIG(tooltip)
@@ -1586,19 +2326,27 @@ class Ui_MainWindow(object):
         self.closeAppBtn.setToolTip(QCoreApplication.translate("MainWindow", u"Close", None))
 #endif // QT_CONFIG(tooltip)
         self.closeAppBtn.setText("")
+        self.btn_message.setText(QCoreApplication.translate("MainWindow", u"Message", None))
+        self.btn_print.setText(QCoreApplication.translate("MainWindow", u"Print", None))
+        self.btn_logout.setText(QCoreApplication.translate("MainWindow", u"Logout", None))
+        self.welcome.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:700; font-style:italic;\">\u6b22\u8fce\u4f7f\u7528 \u8bf7\u5148\u767b\u5f55</span></p></body></html>", None))
+        self.btn_pwd_change.setText(QCoreApplication.translate("MainWindow", u"\u4fee\u6539\u5bc6\u7801", None))
+        self.btn_course_check.setText(QCoreApplication.translate("MainWindow", u"\u67e5\u770b\u8bfe\u7a0b", None))
+        self.btn_course_choose.setText(QCoreApplication.translate("MainWindow", u"\u8fdb\u5165\u9009\u8bfe", None))
+        self.btn_info_change.setText(QCoreApplication.translate("MainWindow", u"\u4fee\u6539\u4fe1\u606f", None))
         self.labelBoxBlenderInstalation.setText(QCoreApplication.translate("MainWindow", u"FILE BOX", None))
         self.lineEdit.setText("")
         self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Type here", None))
         self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Open", None))
         self.labelVersion_3.setText(QCoreApplication.translate("MainWindow", u"Label description", None))
-        self.checkBox.setText(QCoreApplication.translate("MainWindow", u"CheckBox", None))
         self.radioButton.setText(QCoreApplication.translate("MainWindow", u"RadioButton", None))
+        self.commandLinkButton.setText(QCoreApplication.translate("MainWindow", u"Link Button", None))
+        self.commandLinkButton.setDescription(QCoreApplication.translate("MainWindow", u"Link description", None))
+        self.checkBox.setText(QCoreApplication.translate("MainWindow", u"CheckBox", None))
         self.comboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"Test 1", None))
         self.comboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"Test 2", None))
         self.comboBox.setItemText(2, QCoreApplication.translate("MainWindow", u"Test 3", None))
 
-        self.commandLinkButton.setText(QCoreApplication.translate("MainWindow", u"Link Button", None))
-        self.commandLinkButton.setDescription(QCoreApplication.translate("MainWindow", u"Link description", None))
         ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"0", None));
         ___qtablewidgetitem1 = self.tableWidget.horizontalHeaderItem(1)
@@ -1652,11 +2400,228 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Line", None));
         self.tableWidget.setSortingEnabled(__sortingEnabled)
 
-        self.label.setText(QCoreApplication.translate("MainWindow", u"NEW PAGE TEST", None))
-        self.btn_message.setText(QCoreApplication.translate("MainWindow", u"Message", None))
-        self.btn_print.setText(QCoreApplication.translate("MainWindow", u"Print", None))
-        self.btn_logout.setText(QCoreApplication.translate("MainWindow", u"Logout", None))
-        self.creditsLabel.setText(QCoreApplication.translate("MainWindow", u"By: Wanderson M. Pimenta", None))
-        self.version.setText(QCoreApplication.translate("MainWindow", u"v1.0.3", None))
+        self.welcome_2.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:700; font-style:italic;\">\u6b22\u8fce\u4f7f\u7528 \u8bf7\u5148\u767b\u5f55</span></p></body></html>", None))
+        self.btn_pwd_change_2.setText(QCoreApplication.translate("MainWindow", u"\u4fee\u6539\u5bc6\u7801", None))
+        self.btn_grade_change.setText(QCoreApplication.translate("MainWindow", u"\u5f55\u5165\u6210\u7ee9", None))
+        self.btn_course_check_2.setText(QCoreApplication.translate("MainWindow", u"\u67e5\u770b\u8bfe\u7a0b", None))
+        self.btn_info_change_2.setText(QCoreApplication.translate("MainWindow", u"\u4fee\u6539\u4fe1\u606f", None))
+        self.btn_info_change_confirm_3.setText(QCoreApplication.translate("MainWindow", u"\u786e\u8ba4\u4fee\u6539", None))
+        self.welcome_4.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\">\u8bf7\u9009\u62e9\u9700\u8981\u66f4\u6539\u7684\u4fe1\u606f</p></body></html>", None))
+        self.changed_info.setText("")
+        self.changed_info.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u8bf7\u8f93\u5165\u8981\u4fee\u6539\u7684\u4fe1\u606f", None))
+        ___qtablewidgetitem24 = self.student_info.horizontalHeaderItem(0)
+        ___qtablewidgetitem24.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem25 = self.student_info.horizontalHeaderItem(1)
+        ___qtablewidgetitem25.setText(QCoreApplication.translate("MainWindow", u"1", None));
+        ___qtablewidgetitem26 = self.student_info.horizontalHeaderItem(2)
+        ___qtablewidgetitem26.setText(QCoreApplication.translate("MainWindow", u"2", None));
+        ___qtablewidgetitem27 = self.student_info.horizontalHeaderItem(3)
+        ___qtablewidgetitem27.setText(QCoreApplication.translate("MainWindow", u"3", None));
+        ___qtablewidgetitem28 = self.student_info.horizontalHeaderItem(4)
+        ___qtablewidgetitem28.setText(QCoreApplication.translate("MainWindow", u"\u65b0\u5efa\u5217", None));
+        ___qtablewidgetitem29 = self.student_info.horizontalHeaderItem(5)
+        ___qtablewidgetitem29.setText(QCoreApplication.translate("MainWindow", u"\u65b0\u5efa\u5217", None));
+        ___qtablewidgetitem30 = self.student_info.verticalHeaderItem(0)
+        ___qtablewidgetitem30.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem31 = self.student_info.verticalHeaderItem(1)
+        ___qtablewidgetitem31.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem32 = self.student_info.verticalHeaderItem(2)
+        ___qtablewidgetitem32.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+
+        __sortingEnabled1 = self.student_info.isSortingEnabled()
+        self.student_info.setSortingEnabled(False)
+        ___qtablewidgetitem33 = self.student_info.item(0, 0)
+        ___qtablewidgetitem33.setText(QCoreApplication.translate("MainWindow", u"\u5b66\u53f7", None));
+        ___qtablewidgetitem34 = self.student_info.item(0, 1)
+        ___qtablewidgetitem34.setText(QCoreApplication.translate("MainWindow", u"\u4e13\u4e1a", None));
+        ___qtablewidgetitem35 = self.student_info.item(0, 2)
+        ___qtablewidgetitem35.setText(QCoreApplication.translate("MainWindow", u"\u59d3\u540d", None));
+        ___qtablewidgetitem36 = self.student_info.item(0, 3)
+        ___qtablewidgetitem36.setText(QCoreApplication.translate("MainWindow", u"\u5b66\u9662", None));
+        ___qtablewidgetitem37 = self.student_info.item(0, 4)
+        ___qtablewidgetitem37.setText(QCoreApplication.translate("MainWindow", u"\u6027\u522b", None));
+        ___qtablewidgetitem38 = self.student_info.item(0, 5)
+        ___qtablewidgetitem38.setText(QCoreApplication.translate("MainWindow", u"\u51fa\u751f\u65e5\u671f", None));
+        self.student_info.setSortingEnabled(__sortingEnabled1)
+
+        self.select_info.setItemText(0, QCoreApplication.translate("MainWindow", u"major", None))
+        self.select_info.setItemText(1, QCoreApplication.translate("MainWindow", u"dept", None))
+        self.select_info.setItemText(2, QCoreApplication.translate("MainWindow", u"birthday", None))
+        self.select_info.setItemText(3, QCoreApplication.translate("MainWindow", u"gender", None))
+
+        self.select_info.setCurrentText(QCoreApplication.translate("MainWindow", u"major", None))
+        self.welcome_3.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:700; font-style:italic;\">\u6b22\u8fce\u4f7f\u7528 \u8bf7\u5148\u767b\u5f55</span></p></body></html>", None))
+        self.btn_pwd_change_student.setText(QCoreApplication.translate("MainWindow", u"\u4fee\u6539\u5b66\u751f\u5bc6\u7801", None))
+        self.btn_pwd_change_teacher.setText(QCoreApplication.translate("MainWindow", u"\u4fee\u6539\u6559\u5e08\u5bc6\u7801", None))
+        self.btn_remove_course.setText(QCoreApplication.translate("MainWindow", u"\u5f52\u6863\u8bfe\u7a0b", None))
+        self.btn_course_info_edit.setText(QCoreApplication.translate("MainWindow", u"\u4fee\u6539\u8bfe\u7a0b\u4fe1\u606f", None))
+        self.btn_pwd_change_agent.setText(QCoreApplication.translate("MainWindow", u"\u4fee\u6539\u7ba1\u7406\u5458\u5bc6\u7801", None))
+        self.btn_add_course.setText(QCoreApplication.translate("MainWindow", u"\u589e\u52a0\u8bfe\u7a0b", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:700;\">\u767b\u5f55-\u9009\u8bfe\u7cfb\u7edf</span></p></body></html>", None))
+        self.id.setText("")
+        self.id.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u8bf7\u8f93\u5165ID", None))
+        self.pwd.setText("")
+        self.pwd.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u8bf7\u8f93\u5165\u5bc6\u7801", None))
+        self.btn_student_login.setText(QCoreApplication.translate("MainWindow", u"\u5b66\u751f\u7aef", None))
+        self.btn_teacher_login.setText(QCoreApplication.translate("MainWindow", u"\u6559\u5e08\u7aef", None))
+        self.btn_agent_login.setText(QCoreApplication.translate("MainWindow", u"\u7ba1\u7406\u5458", None))
+        ___qtablewidgetitem39 = self.course_display.horizontalHeaderItem(0)
+        ___qtablewidgetitem39.setText(QCoreApplication.translate("MainWindow", u"\u5b66\u751f\u5b66\u53f7", None));
+        ___qtablewidgetitem40 = self.course_display.horizontalHeaderItem(1)
+        ___qtablewidgetitem40.setText(QCoreApplication.translate("MainWindow", u"\u5b66\u751f\u59d3\u540d", None));
+        ___qtablewidgetitem41 = self.course_display.horizontalHeaderItem(2)
+        ___qtablewidgetitem41.setText(QCoreApplication.translate("MainWindow", u"\u8bfe\u7a0b\u540d\u79f0", None));
+        ___qtablewidgetitem42 = self.course_display.horizontalHeaderItem(3)
+        ___qtablewidgetitem42.setText(QCoreApplication.translate("MainWindow", u"\u8bfe\u7a0bID", None));
+        ___qtablewidgetitem43 = self.course_display.horizontalHeaderItem(4)
+        ___qtablewidgetitem43.setText(QCoreApplication.translate("MainWindow", u"\u8bfe\u7a0b\u4ecb\u7ecd", None));
+        ___qtablewidgetitem44 = self.course_display.horizontalHeaderItem(5)
+        ___qtablewidgetitem44.setText(QCoreApplication.translate("MainWindow", u"\u8bfe\u7a0b\u5b66\u5206", None));
+        ___qtablewidgetitem45 = self.course_display.horizontalHeaderItem(6)
+        ___qtablewidgetitem45.setText(QCoreApplication.translate("MainWindow", u"\u8bfe\u7a0b\u65f6\u95f4", None));
+        ___qtablewidgetitem46 = self.course_display.horizontalHeaderItem(7)
+        ___qtablewidgetitem46.setText(QCoreApplication.translate("MainWindow", u"\u6388\u8bfe\u6559\u5e08", None));
+        ___qtablewidgetitem47 = self.course_display.horizontalHeaderItem(8)
+        ___qtablewidgetitem47.setText(QCoreApplication.translate("MainWindow", u"\u73ed\u7ea7\u53f7", None));
+        ___qtablewidgetitem48 = self.course_display.verticalHeaderItem(0)
+        ___qtablewidgetitem48.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem49 = self.course_display.verticalHeaderItem(1)
+        ___qtablewidgetitem49.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem50 = self.course_display.verticalHeaderItem(2)
+        ___qtablewidgetitem50.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem51 = self.course_display.verticalHeaderItem(3)
+        ___qtablewidgetitem51.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem52 = self.course_display.verticalHeaderItem(4)
+        ___qtablewidgetitem52.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem53 = self.course_display.verticalHeaderItem(5)
+        ___qtablewidgetitem53.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem54 = self.course_display.verticalHeaderItem(6)
+        ___qtablewidgetitem54.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem55 = self.course_display.verticalHeaderItem(7)
+        ___qtablewidgetitem55.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem56 = self.course_display.verticalHeaderItem(8)
+        ___qtablewidgetitem56.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem57 = self.course_display.verticalHeaderItem(9)
+        ___qtablewidgetitem57.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem58 = self.course_display.verticalHeaderItem(10)
+        ___qtablewidgetitem58.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem59 = self.course_display.verticalHeaderItem(11)
+        ___qtablewidgetitem59.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem60 = self.course_display.verticalHeaderItem(12)
+        ___qtablewidgetitem60.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem61 = self.course_display.verticalHeaderItem(13)
+        ___qtablewidgetitem61.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem62 = self.course_display.verticalHeaderItem(14)
+        ___qtablewidgetitem62.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem63 = self.course_display.verticalHeaderItem(15)
+        ___qtablewidgetitem63.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+
+        __sortingEnabled2 = self.course_display.isSortingEnabled()
+        self.course_display.setSortingEnabled(False)
+        ___qtablewidgetitem64 = self.course_display.item(0, 0)
+        ___qtablewidgetitem64.setText(QCoreApplication.translate("MainWindow", u"\u5b66\u751f\u5b66\u53f7", None));
+        ___qtablewidgetitem65 = self.course_display.item(0, 1)
+        ___qtablewidgetitem65.setText(QCoreApplication.translate("MainWindow", u"\u5b66\u751f\u59d3\u540d", None));
+        ___qtablewidgetitem66 = self.course_display.item(0, 2)
+        ___qtablewidgetitem66.setText(QCoreApplication.translate("MainWindow", u"\u8bfe\u7a0b\u540d\u79f0", None));
+        ___qtablewidgetitem67 = self.course_display.item(0, 3)
+        ___qtablewidgetitem67.setText(QCoreApplication.translate("MainWindow", u"\u8bfe\u7a0bID", None));
+        ___qtablewidgetitem68 = self.course_display.item(0, 4)
+        ___qtablewidgetitem68.setText(QCoreApplication.translate("MainWindow", u"\u8bfe\u7a0b\u4ecb\u7ecd", None));
+        ___qtablewidgetitem69 = self.course_display.item(0, 5)
+        ___qtablewidgetitem69.setText(QCoreApplication.translate("MainWindow", u"\u8bfe\u7a0b\u5b66\u5206", None));
+        ___qtablewidgetitem70 = self.course_display.item(0, 6)
+        ___qtablewidgetitem70.setText(QCoreApplication.translate("MainWindow", u"\u8bfe\u7a0b\u65f6\u95f4", None));
+        ___qtablewidgetitem71 = self.course_display.item(0, 7)
+        ___qtablewidgetitem71.setText(QCoreApplication.translate("MainWindow", u"\u6388\u8bfe\u6559\u5e08", None));
+        ___qtablewidgetitem72 = self.course_display.item(0, 8)
+        ___qtablewidgetitem72.setText(QCoreApplication.translate("MainWindow", u"\u73ed\u7ea7\u53f7", None));
+        self.course_display.setSortingEnabled(__sortingEnabled2)
+
+        self.pwd_current.setText("")
+        self.pwd_current.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u8bf7\u8f93\u5165\u539f\u5bc6\u7801", None))
+        self.pwd_new.setText("")
+        self.pwd_new.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u8bf7\u8f93\u5165\u65b0\u5bc6\u7801", None))
+        self.pwd_new_check.setText("")
+        self.pwd_new_check.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u8bf7\u786e\u8ba4\u65b0\u5bc6\u7801", None))
+        self.btn_pwd_change_confirm.setText(QCoreApplication.translate("MainWindow", u"\u4fee\u6539\u5bc6\u7801", None))
+        self.course_id.setText("")
+        self.course_id.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u8bf7\u8f93\u5165\u64cd\u4f5c\u8bfe\u7a0b\u5e8f\u53f7", None))
+        self.confirm_btn.setText(QCoreApplication.translate("MainWindow", u"\u786e\u5b9a\u4fee\u6539", None))
+        self.choose_check_btn.setText(QCoreApplication.translate("MainWindow", u"\u9009\u62e9\u8bfe\u7a0b", None))
+        self.quit_check_btn.setText(QCoreApplication.translate("MainWindow", u"\u9000\u51fa\u8bfe\u7a0b", None))
+        ___qtablewidgetitem73 = self.course_all_display.horizontalHeaderItem(0)
+        ___qtablewidgetitem73.setText(QCoreApplication.translate("MainWindow", u"0", None));
+        ___qtablewidgetitem74 = self.course_all_display.horizontalHeaderItem(1)
+        ___qtablewidgetitem74.setText(QCoreApplication.translate("MainWindow", u"1", None));
+        ___qtablewidgetitem75 = self.course_all_display.horizontalHeaderItem(2)
+        ___qtablewidgetitem75.setText(QCoreApplication.translate("MainWindow", u"\u65b0\u5efa\u5217", None));
+        ___qtablewidgetitem76 = self.course_all_display.horizontalHeaderItem(3)
+        ___qtablewidgetitem76.setText(QCoreApplication.translate("MainWindow", u"2", None));
+        ___qtablewidgetitem77 = self.course_all_display.horizontalHeaderItem(4)
+        ___qtablewidgetitem77.setText(QCoreApplication.translate("MainWindow", u"3", None));
+        ___qtablewidgetitem78 = self.course_all_display.horizontalHeaderItem(5)
+        ___qtablewidgetitem78.setText(QCoreApplication.translate("MainWindow", u"4", None));
+        ___qtablewidgetitem79 = self.course_all_display.horizontalHeaderItem(6)
+        ___qtablewidgetitem79.setText(QCoreApplication.translate("MainWindow", u"5", None));
+        ___qtablewidgetitem80 = self.course_all_display.horizontalHeaderItem(7)
+        ___qtablewidgetitem80.setText(QCoreApplication.translate("MainWindow", u"\u65b0\u5efa\u5217", None));
+        ___qtablewidgetitem81 = self.course_all_display.horizontalHeaderItem(8)
+        ___qtablewidgetitem81.setText(QCoreApplication.translate("MainWindow", u"7", None));
+        ___qtablewidgetitem82 = self.course_all_display.verticalHeaderItem(0)
+        ___qtablewidgetitem82.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem83 = self.course_all_display.verticalHeaderItem(1)
+        ___qtablewidgetitem83.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem84 = self.course_all_display.verticalHeaderItem(2)
+        ___qtablewidgetitem84.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem85 = self.course_all_display.verticalHeaderItem(3)
+        ___qtablewidgetitem85.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem86 = self.course_all_display.verticalHeaderItem(4)
+        ___qtablewidgetitem86.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem87 = self.course_all_display.verticalHeaderItem(5)
+        ___qtablewidgetitem87.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem88 = self.course_all_display.verticalHeaderItem(6)
+        ___qtablewidgetitem88.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem89 = self.course_all_display.verticalHeaderItem(7)
+        ___qtablewidgetitem89.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem90 = self.course_all_display.verticalHeaderItem(8)
+        ___qtablewidgetitem90.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem91 = self.course_all_display.verticalHeaderItem(9)
+        ___qtablewidgetitem91.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem92 = self.course_all_display.verticalHeaderItem(10)
+        ___qtablewidgetitem92.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem93 = self.course_all_display.verticalHeaderItem(11)
+        ___qtablewidgetitem93.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem94 = self.course_all_display.verticalHeaderItem(12)
+        ___qtablewidgetitem94.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem95 = self.course_all_display.verticalHeaderItem(13)
+        ___qtablewidgetitem95.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem96 = self.course_all_display.verticalHeaderItem(14)
+        ___qtablewidgetitem96.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+        ___qtablewidgetitem97 = self.course_all_display.verticalHeaderItem(15)
+        ___qtablewidgetitem97.setText(QCoreApplication.translate("MainWindow", u"New Row", None));
+
+        __sortingEnabled3 = self.course_all_display.isSortingEnabled()
+        self.course_all_display.setSortingEnabled(False)
+        ___qtablewidgetitem98 = self.course_all_display.item(0, 0)
+        ___qtablewidgetitem98.setText(QCoreApplication.translate("MainWindow", u"\u8bfe\u7a0b\u7f16\u53f7", None));
+        ___qtablewidgetitem99 = self.course_all_display.item(0, 1)
+        ___qtablewidgetitem99.setText(QCoreApplication.translate("MainWindow", u"\u8bfe\u7a0b\u540d\u79f0", None));
+        ___qtablewidgetitem100 = self.course_all_display.item(0, 2)
+        ___qtablewidgetitem100.setText(QCoreApplication.translate("MainWindow", u"\u8bfe\u7a0b\u4ecb\u7ecd", None));
+        ___qtablewidgetitem101 = self.course_all_display.item(0, 3)
+        ___qtablewidgetitem101.setText(QCoreApplication.translate("MainWindow", u"\u8bfe\u7a0b\u5b66\u65f6", None));
+        ___qtablewidgetitem102 = self.course_all_display.item(0, 4)
+        ___qtablewidgetitem102.setText(QCoreApplication.translate("MainWindow", u"\u8bfe\u7a0b\u5b66\u5206", None));
+        ___qtablewidgetitem103 = self.course_all_display.item(0, 5)
+        ___qtablewidgetitem103.setText(QCoreApplication.translate("MainWindow", u"\u8bfe\u7a0b\u65f6\u95f4", None));
+        ___qtablewidgetitem104 = self.course_all_display.item(0, 6)
+        ___qtablewidgetitem104.setText(QCoreApplication.translate("MainWindow", u"\u4efb\u8bfe\u6559\u5e08", None));
+        ___qtablewidgetitem105 = self.course_all_display.item(0, 7)
+        ___qtablewidgetitem105.setText(QCoreApplication.translate("MainWindow", u"\u73ed\u7ea7\u53f7", None));
+        self.course_all_display.setSortingEnabled(__sortingEnabled3)
+
+        self.creditsLabel.setText(QCoreApplication.translate("MainWindow", u"By WinchesterDaw", None))
+        self.version.setText(QCoreApplication.translate("MainWindow", u"v1.0", None))
     # retranslateUi
 
